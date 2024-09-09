@@ -1,0 +1,165 @@
+[
+  {
+    "ContainingType": "PDFManipulation.Controllers.FileDataController",
+    "Method": "AddFileData",
+    "RelativePath": "api/FileData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileData",
+        "Type": "PDFManipulation.Entities.FileData",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PDFManipulation.Controllers.FileDataController",
+    "Method": "GetFileDataByFileId",
+    "RelativePath": "api/FileData/{fileId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PDFManipulation.Controllers.FileDataController",
+    "Method": "DeleteFileData",
+    "RelativePath": "api/FileData/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PDFManipulation.Controllers.HighlightAreaController",
+    "Method": "AddHighlightAreas",
+    "RelativePath": "api/HighlightArea",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "highlightAreas",
+        "Type": "System.Collections.Generic.List\u00601[[PDFManipulation.Entities.HighlightArea, PDFManipulation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PDFManipulation.Controllers.HighlightAreaController",
+    "Method": "GetHighlightAreasByFileDataId",
+    "RelativePath": "api/HighlightArea/{fileDataId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileDataId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PDFManipulation.Controllers.PdfsController",
+    "Method": "UploadForm",
+    "RelativePath": "api/Pdfs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentDisposition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Headers",
+        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
+        "IsRequired": false
+      },
+      {
+        "Name": "Length",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PDFManipulation.Controllers.PdfsController",
+    "Method": "GetAllFileName",
+    "RelativePath": "api/Pdfs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PDFManipulation.Controllers.PdfsController",
+    "Method": "GetPdfFileByIdAsync",
+    "RelativePath": "api/Pdfs/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PDFManipulation.Controllers.PdfsController",
+    "Method": "DeletePdfFileAsync",
+    "RelativePath": "api/Pdfs/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
